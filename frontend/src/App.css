@@ -1,10 +1,10 @@
 .App {
+    width: 100vw;
     text-align: center;
-}
-
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .App-header {
@@ -16,4 +16,160 @@
     font-size: calc(10px + 2vmin);
     color: #333;
     background-color: #fff;
+}
+.searchContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.flex-container{
+    width: 80vw;
+}
+.selector{
+    display: flex;
+    align-self: flex-start;
+    margin: 0;
+}
+.selectbox{
+    width: min-content;
+    background-color: #fff;
+    color: #555;
+    font-size: 15px;
+}
+.textInput {
+    padding: 10px 0;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    outline: none;
+    border: 1px solid #f0f3f5;
+    background-color: #f0f3f5;
+    border-radius: 8px;
+    margin: 10px 0 1px 0;
+    font-size: 18px;
+    text-transform: capitalize;
+    transition: 200ms;
+}
+.textInput:focus-within{
+    background-color: #fff;
+    border-radius: 3px;
+}
+.search{
+    width: 100%;
+    transition: 200ms;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: transparent;
+}
+.search:focus-within{
+    transform: scale(1.2);
+    background-color: #fff;
+}
+input{
+    height: 100%;
+    width: 90%;
+    margin-left: 5px;
+    outline: none;
+    border: 1px solid #f0f3f5;
+    background-color: #f0f3f5;
+    font-size: 18px;
+}
+input:focus{
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+.headers {
+    color: #5b6772;
+    text-align: start;
+    padding: 16px 24px 12px;
+}
+
+.icon {
+    padding: 8px 16px 8px 0;
+    min-width: 6px;
+    margin-left: 25px;
+    border-radius: 8px;
+}
+
+.selectbox {
+    border: none;
+    border-style: none;
+    border: 0px solid #f0f3f5;
+    outline: none;
+}
+
+.buttonstyle {
+    width: 50px;
+    height: 50px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: none;
+    border-style: none;
+    background-color: #e95f29;
+    border: 0px solid #f0f3f5;
+    outline: none;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2px;
+    border: 1px solid #f0f3f5;
+    background-color: #f0f3f5;
+}
+
+.dropdownItem{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    height: 30px;
+    padding: 10px 0;
+    margin: 0 0 2px 15px;
+    border: 1px solid #f0f3f5;
+    background-color: #f0f3f5;
+}
+
+.city{
+    display: flex;
+    width: 100%;
+    margin: 0 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.country{
+    display: flex;
+    align-self: flex-start;
+    margin: 5px 20px;
+    font-size: 12px;
+}
+
+.searchIcon{
+    width: 18px;
+    height: 18px;
+    color: #fff;
+
+}
+
+@media only screen and (max-width: 750px) {
+    .buttonstyle {
+        width: 95vw;
+        height: 50px;
+    }
+}
+@media only screen and (min-width: 751px) {
+    .search {
+        padding: 10px 0;
+        height: 30px;
+        width: 100%;
+        margin: 10px 5px;
+    }
+    .flex-container{
+        display: flex;
+        justify-content: center;
+        width: 90vw;
+    }
 }
